@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'assets/stylesheet/_overwrite.scss';
+@import 'assets/stylesheet/_utility.scss';
+@import 'assets/stylesheet/_variables.scss';
+@import 'assets/stylesheet/common.scss';
+
+body {
+    background-color: #E3E3E3;
+    color: #3E3E3E;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
