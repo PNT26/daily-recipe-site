@@ -17,7 +17,7 @@ export default function NavBar() {
 
     return (
         <StyledNavBar>
-            <nav className="nav flex justify-between items-center w-[100%] p-[16px] md:px-[40px] md:py-[20px]">
+            <nav className="nav flex justify-between items-center w-[100%] p-[16px] md:px-[80px] md:py-[20px]">
                 <img src="https://asmpa.selise.cloud/1682421551_139b99d1ca82f35bcb909a8e289c84_DailyRecipes.png" alt="logo" width="120" height="28" className="md:hidden cursor-pointer" />
                 <img src="https://asmpa.selise.cloud/1682421551_139b99d1ca82f35bcb909a8e289c84_DailyRecipes.png" alt="logo" width="200" height="44"
                      className="hidden md:block cursor-pointer" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" />

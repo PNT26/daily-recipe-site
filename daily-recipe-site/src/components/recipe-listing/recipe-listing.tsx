@@ -41,7 +41,7 @@ export default function RecipeListing() {
                     </div>
                     <div className="recipe-lists flex flex-row gap-x-[20px] items-center pb-[10px]">
                         {recipe.map((recipe) => (
-                            <div className="recipe-card md:max-w-[410px] md:min-w-[350px] rounded-[16px]">
+                            <div className="recipe-card md:max-w-[410px] md:min-w-[350px] rounded-[16px] cursor-pointer">
                                 <img src={recipe.img} alt={recipe.alt}
                                      width="100%" className="recipe-card__image md:min-h-[300px] md:max-h-[400px] rounded-t-[16px]" />
                                 <div className="p-[16px] bg-white rounded-b-[16px]">

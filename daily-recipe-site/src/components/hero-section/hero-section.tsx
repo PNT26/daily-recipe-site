@@ -6,10 +6,11 @@ export default function HeroSection() {
 
     return (
         <StyledHeroSection>
-            <div className="hero text-center flex flex-col w-[100%] md:w-[75%] xl:w-[50%] py-[40px] px-[16px] lg:px-0 items-center text-white">
-                <h1 className="hero-title text-[40px] lg:text-[80px] font-black"  data-aos="fade-up" data-aos-duration="1000">Delight your taste buds with us</h1>
+            <div className="hero text-center flex flex-col w-[100%] md:w-[75%] xl:w-[50%] py-[40px] px-[16px] lg:px-0 items-center">
+                <h1 className="hero-title text-[40px] lg:text-[90px]"  data-aos="fade-up" data-aos-duration="1000">Delight your taste buds with us</h1>
                 <p className="hero-description my-[16px] text-[16px] md:text-[24px] lg:px-[40px]" data-aos="fade-up" data-aos-duration="1300">
-                    Discover delicious recipes for any dish, from appetizers to desserts, on this website!
+                    Discover delicious recipes for any dish, from appetizers to desserts! Sign up to our portal in order to contribute to
+                    this community so that people can see and follow your contents.
                 </p>
                 <div className="flex gap-y-[40px] flex-col items-center justify-center w-[100%]">
                     <button className="btn-primary" data-aos="fade-up" data-aos-duration="1600">Get Started</button>
