@@ -1,3 +1,36 @@
+@tailwind components;
+
+@layer components {
+  .btn {
+    @apply rounded-[4px] py-[8px] px-[16px] md:py-[10px] md:px-[20px] md:text-[16px] text-[14px] font-semibold;
+    &-primary {
+      @apply bg-primary-500 text-white hover:bg-primary-900;
+    }
+    &-white {
+      @apply bg-white text-primary-500;
+      &:hover {
+        background-color: rgba(var(--white), 0.9) !important;
+      }
+    }
+    &-outline-primary--100 {
+      @apply text-primary-500 hover:bg-primary-100;
+      background-color: transparent;
+      border: 1px solid var(--primary);
+    }
+    &-outline-primary {
+      @apply text-primary-500 hover:bg-primary-500 hover:text-white border-[1px] border-primary-500;
+      background-color: transparent;
+    }
+    &-transparent {
+      @apply text-primary-500 p-0 hover:text-primary-600;
+      background-color: transparent;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
 .transition {
   &-ease-in {
     transition: 0.4s ease-in;
@@ -29,4 +62,22 @@
 .recipe-lists {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
+
+.custom-btn {
+  &__icon {
+    transition: 0.2s ease-out;
+  }
+  &:hover &__icon {
+    transform: translate(8px);
+  }
+}
+
+.rotate-btn {
+  &__icon {
+    transition: 0.2s ease-out;
+  }
+  &:hover &__icon {
+    transform: rotate(-20deg);
+  }
 }

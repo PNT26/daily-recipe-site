@@ -113,7 +113,7 @@ export default function NavBar() {
             ) : null}
           </li>
           <li>
-            <button className="btn-outline-primary flex justify-center items-center gap-x-[12px]">
+            <button className="btn btn-outline--primary flex justify-center items-center gap-x-[12px]">
               Login
               <ArrowLeftOnRectangleIcon className="w-[24px]" />
             </button>
@@ -121,7 +121,7 @@ export default function NavBar() {
         </ul>
         {openNav ? (
           <div className="flex justify-end items-center gap-x-[10px] md:hidden">
-            <button className="btn-outline-primary flex justify-center items-center gap-x-[12px] md:hidden">
+            <button className="btn btn-outline--primary flex justify-center items-center gap-x-[12px] md:hidden">
               Login
               <ArrowLeftOnRectangleIcon className="w-[18px] lg:w-[24px]" />
             </button>
@@ -137,7 +137,7 @@ export default function NavBar() {
           </div>
         ) : (
           <div className="flex justify-end items-center gap-x-[10px] md:hidden">
-            <button className="btn-outline-primary flex justify-center items-center gap-x-[12px] md:hidden">
+            <button className="btn btn-outline--primary flex justify-center items-center gap-x-[12px] md:hidden">
               Login
               <ArrowLeftOnRectangleIcon className="w-[18px] lg:w-[24px]" />
             </button>

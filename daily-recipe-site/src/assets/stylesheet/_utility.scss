@@ -1,41 +1,5 @@
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 @import "./variables";
-
-.btn {
-  @apply rounded-[4px] py-[8px] px-[16px] md:py-[10px] md:px-[20px] md:text-[16px] text-[14px] font-semibold;
-  &-primary {
-    @extend .btn;
-    @apply bg-primary-500 text-white hover:bg-primary-900;
-  }
-  &-white {
-    @extend .btn;
-    @apply bg-white text-primary-500;
-    &:hover {
-      background-color: rgba(var(--white), 0.9) !important;
-    }
-  }
-  &-outline-primary--100 {
-    @extend .btn;
-    @apply text-primary-500 hover:bg-primary-100;
-    background-color: transparent;
-    border: 1px solid var(--primary);
-  }
-  &-outline-primary {
-    @extend .btn;
-    @apply text-primary-500 hover:bg-primary-500 hover:text-white border-[1px] border-primary-500;
-    background-color: transparent;
-  }
-  &-transparent {
-    @extend .btn;
-    @apply text-primary-500 p-0 hover:text-primary-600;
-    background-color: transparent;
-    &:hover {
-      box-shadow: none;
-    }
-  }
-}
 
 .bg-transparent {
   background-color: transparent !important;
