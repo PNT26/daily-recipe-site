@@ -1,6 +1,3 @@
 import styled from "styled-components";
 
-export const StyledRecipeListing = styled.div`
-
-    
-`
+export const StyledRecipeListing = styled.div``;

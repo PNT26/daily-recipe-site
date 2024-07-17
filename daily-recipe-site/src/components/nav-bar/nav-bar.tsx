@@ -7,10 +7,12 @@ import {
   ArrowLeftOnRectangleIcon,
 } from "@heroicons/react/24/outline";
 import { StyledNavBar } from "./nav-bar.style";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
   const [openNav, setOpenNav] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const toggleNavigation = () => {
     setOpenNav(!openNav);
@@ -19,6 +21,21 @@ export default function NavBar() {
   const toggleDropdown = () => {
     setShowMenu(!showMenu);
   };
+
+  const navList = [
+    {
+      nav: "Home",
+      path: "/",
+    },
+    {
+      nav: "Recipes",
+      path: "recipes",
+    },
+    {
+      nav: "About us",
+      path: "about-us",
+    },
+  ];
 
   return (
     <StyledNavBar>
@@ -59,16 +76,22 @@ export default function NavBar() {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <li className="cursor-pointer font-medium text-[16px] hover:text-primary-500">
-            Home
-          </li>
-          <li className="cursor-pointer font-medium text-[16px] hover:text-primary-500">
-            Recipes
-          </li>
-          <li className="cursor-pointer font-medium text-[16px] hover:text-primary-500">
-            About us
-          </li>
-          <li className="relative">
+          {navList.map((list, i) => (
+            <li
+              key={i}
+              className={`cursor-pointer font-medium text-[16px] ${
+                selectedIndex === i ? "text-primary-500" : "font-bold"
+              }`}
+              onClick={() => {
+                setSelectedIndex(i);
+              }}
+            >
+              <Link key={i} to={list.path}>
+                {list.nav}
+              </Link>
+            </li>
+          ))}
+          {/* <li className="relative">
             <button
               className="nav__dropdown--button flex items-center gap-x-[12px] hover:text-primary-500 cursor-pointer font-medium text-[16px]"
               onClick={toggleDropdown}
@@ -111,10 +134,10 @@ export default function NavBar() {
                 </li>
               </div>
             ) : null}
-          </li>
+          </li> */}
           <li>
             <button className="btn btn-outline--primary flex justify-center items-center gap-x-[12px]">
-              Login
+              Logout
               <ArrowLeftOnRectangleIcon className="w-[24px]" />
             </button>
           </li>

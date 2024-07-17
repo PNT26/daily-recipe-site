@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  ArrowSmallRightIcon,
-  CursorArrowRaysIcon,
-} from "@heroicons/react/20/solid";
+import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 import { StyledLanding } from "./landing.style";
 import HeroSection from "../hero-section/hero-section";
 import RecipeListing from "../recipe-listing/recipe-listing";
